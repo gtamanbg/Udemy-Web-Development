@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs</title>
+</head>
+
+<body>
+    <form action="">
+        <!-- text -->
+        <label for="">Name:</label>
+        <input type="text" min="1" maxlength="10"><br><br>
+
+        <!-- color -->
+        <p>Choose the color of the head and body of the HTML document</p>
+        <input type="color" name="head" id="head" value="#443434">
+        <label for="head">Head</label><br>
+        <input type="color" name="body" id="body" value="#380725">
+        <label for="body">Body</label><br><br>
+
+        <!-- date -->
+        <label for="start">Start date:</label>
+        <input type="date" name="start" id="trip-start" value="2020-09-01" min="2020-01-01" max="2020-12-31"><br><br>
+
+        <!-- datetime-local -->
+        <label for="meeting-time">Choose a time for your appointment:</label>
+        <input type="datetime-local" name="meeting-time" id="meeting-time" value="2020-09-01T19:30"><br><br>
+
+        <!-- email -->
+        <label for="email">Please enter your email:</label>
+        <input type="email" name="email" id="email" placeholder="example.gmail.com"><br><br>
+
+        <!-- file -->
+        <p><label for="profile-picture">Choose a profile picture:</label></p>
+        <input type="file" name="profile-picture" id="profile-picture" accept="image.png, image.jpeg">
+
+        <!-- image -->
+        <p>Sign in to your account:</p>
+        <label for="userId">User ID</label>
+        <input type="text" name="userId" id="userId"><br><br>
+        <input type="image" src="images/login-button.png" alt="Login Button" width="100" height="29">
+        <hr>
+
+        <!-- number -->
+        <label for="football-players">Number of football players</label>
+        <input type="number" name="football-players" id="football-players" min="1" max="11" value="1"
+            placeholder="11"><br><br>
+
+        <!-- password -->
+        <p>Login page</p>
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Sign in">
+
+        <!-- radio -->
+        <p>What's your favorite sport?</p>
+
+        <input type="radio" name="sport" id="football" checked>
+        <label for="football">Football</label><br>
+
+        <input type="radio" name="sport" id="basketball">
+        <label for="basketball">Basketball</label><br>
+
+        <input type="radio" name="sport" id="other">
+        <label for="other">Other</label><br>
+
+        <!-- range -->
+        <p>Audio settings:</p>
+
+        <input type="range" name="volume" id="volume">
+        <label for="volume">Volume</label><br>
+
+        <input type="range" name="bass-level" id="bass-level" min="10" max="100" value="90" step="10">
+        <label for="bass-level">Bass level</label><br><br>
+
+        <!-- tel -->
+        <label for="phone">Enter your phone number:</label><br><br>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+        <small>Format: 1234-567-890</small><br><br>
+
+        <!-- url -->
+        <label for="url">Please enter an http:// URL:</label><br><br>
+        <input type="url" name="url" id="url" placeholder="http://example.com" required pattern="http://*"
+            title="The URL must be in the valid format" size="100" required>
+
+        <!-- checkbox and button -->
+        <p>What's your favorite sport?</p>
+        <input type="checkbox" id="football" value="Football">
+        <label for="football">Football</label><br>
+        <input type="checkbox" id="basketball" value="Basketball">
+        <label for="football">Basketball</label><br>
+        <input type="checkbox" id="other" value="other">
+        <label for="football">Other</label><br><br>
+        <input type="button" value="Submit">
+    </form>
+</body>
+
+</html>
